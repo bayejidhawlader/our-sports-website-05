@@ -7,11 +7,25 @@
     <title>Our Sports Website</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
     <!-- Style Css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <!-- Header -->
+  <header class="bg-dark text-white py-5 text-center">
+      <h1 class="mt-5">
+        Build Your Fantasy Team
+      </h1>
+      <p class="mb-5">
+        The Bangladesh men's national cricket team, popularly known as The Tigers, is administered by the Bangladesh Cricket Board.
+      </p>
+  </header>
+
+
+
     <!-- Sposts Card -->
     <section class="sports-card mt-5">
         <div class="container">
@@ -161,7 +175,7 @@
 
                   <!-- Calculate Total -->
                   <div class="d-grid mx-auto mb-3">
-                    <button class="btn btn-primary py-2 rounded-0">Calculate Total</button>
+                    <button class="btn btn-primary py-2 rounded-0" onclick="addToCart(this)">Calculate Total</button>
                   </div>
 
                   <!-- Total -->
