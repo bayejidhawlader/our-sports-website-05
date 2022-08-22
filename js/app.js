@@ -23,57 +23,57 @@ function disableBtn(playerBtnId) {
 
 // when click button then showing players name to Selected Field
 document.getElementById('player-one').addEventListener('click', function (event) {
-  const flag = insertSelection(event.target.value);
+  const player = insertSelection(event.target.value);
 
-  if (flag === false) {
+  if (player === false) {
     return;
   }
   disableBtn('player-one');
 });
 
 document.getElementById('player-two').addEventListener('click', function (event) {
-  const flag = insertSelection(event.target.value);
+  const player = insertSelection(event.target.value);
 
-  if (flag === false) {
+  if (player === false) {
     return;
   }
   disableBtn('player-two');
 });
 
 document.getElementById('player-three').addEventListener('click', function (event) {
-  const flag = insertSelection(event.target.value);
+  const player = insertSelection(event.target.value);
 
-  if (flag === false) {
+  if (player === false) {
     return;
   }
   disableBtn('player-three');
 });
 
 document.getElementById('player-four').addEventListener('click', function (event) {
-  const flag = insertSelection(event.target.value);
+  const player = insertSelection(event.target.value);
 
-  if (flag === false) {
+  if (player === false) {
     return;
   }
   disableBtn('player-four');
 });
 
 document.getElementById('player-five').addEventListener('click', function (event) {
-  const flag = insertSelection(event.target.value);
+  const player = insertSelection(event.target.value);
 
-  if (flag === false) {
+  if (player === false) {
     return;
   }
   disableBtn('player-five');
 });
 
 document.getElementById('player-six').addEventListener('click', function (event) {
-  const flag = insertSelection(event.target.value);
+  const player = insertSelection(event.target.value);
 
-  if (flag === false) {
+  if (player === false) {
     return;
   }
-  disableBtn('player-six-btn');
+  disableBtn('player-six');
 });
 
 
