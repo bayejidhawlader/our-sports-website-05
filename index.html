@@ -17,7 +17,7 @@
   <!-- Header -->
   <header class="bg-dark text-white py-5 text-center">
       <h1 class="mt-5">
-        Build Your Fantasy Team
+        Build Your Bangladesh Team
       </h1>
       <p class="mb-5">
         The Bangladesh men's national cricket team, popularly known as The Tigers, is administered by the Bangladesh Cricket Board.
@@ -40,7 +40,7 @@
                         <div class="card-body">
                           <h5 class="card-title py-3 text-center">Tamim Iqbal</h5>
                           <div class="d-grid mx-auto">
-                            <button class="btn btn-primary py-2 rounded-0">SELECT</button>
+                            <button id="player-one" value="Tamim Iqbal" class="btn btn-primary py-2 rounded-0">SELECT</button>
                           </div>
                         </div>
                       </div>
@@ -53,7 +53,7 @@
                         <div class="card-body">
                           <h5 class="card-title py-3 text-center">Sabbir Rahman</h5>
                           <div class="d-grid mx-auto">
-                            <button class="btn btn-primary py-2 rounded-0">SELECT</button>
+                            <button id="player-two" value="Sabbir Rahman" class="btn btn-primary py-2 rounded-0">SELECT</button>
                           </div>
                         </div>
                       </div>
@@ -66,7 +66,7 @@
                           <div class="card-body">
                             <h5 class="card-title py-3 text-center">Rubel Hossain</h5>
                             <div class="d-grid mx-auto">
-                              <button class="btn btn-primary py-2 rounded-0">SELECT</button>
+                              <button id="player-three" value="Rubel Hossain" class="btn btn-primary py-2 rounded-0">SELECT</button>
                             </div>
                           </div>
                         </div>
@@ -79,7 +79,7 @@
                           <div class="card-body">
                             <h5 class="card-title py-3 text-center">Shakib Al Hasan</h5>
                             <div class="d-grid mx-auto">
-                              <button class="btn btn-primary py-2 rounded-0">SELECT</button>
+                              <button id="player-four" value="Shakib Al Hasan" class="btn btn-primary py-2 rounded-0">SELECT</button>
                             </div>
                           </div>
                         </div>
@@ -92,7 +92,7 @@
                           <div class="card-body">
                             <h5 class="card-title py-3 text-center">Soumay Sarkar</h5>
                             <div class="d-grid mx-auto">
-                              <button class="btn btn-primary py-2 rounded-0">SELECT</button>
+                              <button id="player-five" value="Soumay Sarkar" class="btn btn-primary py-2 rounded-0">SELECT</button>
                             </div>
                           </div>
                         </div>
@@ -103,9 +103,9 @@
                         <div class="card rounded-0">
                           <img src="img/taskin.png" class="card-img-top our-images" alt="...">
                           <div class="card-body">
-                            <h5 class="card-title py-3 text-center">Shakib Al Hasan</h5>
+                            <h5 class="card-title py-3 text-center">Taskin Ahmed</h5>
                             <div class="d-grid mx-auto">
-                              <button class="btn btn-primary py-2 rounded-0">SELECT</button>
+                              <button id="player-six" value="Taskin Ahmed" class="btn btn-primary py-2 rounded-0">SELECT</button>
                             </div>
                           </div>
                         </div>
@@ -122,6 +122,7 @@
                 <!-- Selected - Player -->
                 <div class="w-75 py-4 mb-4 text-center text-white bg-dark">
                     <h4>Selected - Player</h4>
+                    <div id="players-list"></div>
                 </div>
                 
                 <!-- Budget -->
@@ -149,7 +150,7 @@
                       <h6>Player Expenses</h6>
                     </div>
                     <div class="col-md-6">
-                      <h6 class="text-warning"><span>$</span></h6>
+                      <h6 id="player-expense" class="text-warning">$<span id="player-span-expense"></span></h6>
                     </div>
                   </div>
 
@@ -159,7 +160,7 @@
                       <h6>Manager</h6>
                     </div>
                     <div class="col-md-8">
-                      <input class="bg-dark text-white py-2 border border-2 w-75" id="">
+                      <input id="manager-costs" class="bg-dark text-white py-2 border border-2 w-75" id="">
                     </div>
                   </div>
 
@@ -169,13 +170,13 @@
                       <h6>Coach</h6>
                     </div>
                     <div class="col-md-8">
-                      <input class="bg-dark text-white py-2 border border-2 w-75" id="">
+                      <input id="coach-costs" class="bg-dark text-white py-2 border border-2 w-75" id="">
                     </div>
                   </div>
 
                   <!-- Calculate Total -->
                   <div class="d-grid mx-auto mb-3">
-                    <button class="btn btn-primary py-2 rounded-0" onclick="addToCart(this)">Calculate Total</button>
+                    <button id="calculate-total" class="btn btn-primary py-2 rounded-0">Calculate Total</button>
                   </div>
 
                   <!-- Total -->
@@ -184,7 +185,7 @@
                       <h6>Total Expenses</h6>
                     </div>
                     <div class="col-md-6">
-                      <h6 class="text-warning"><span>$</span></h6>
+                      <h6 id="total-expense" class="text-warning">$<span id="total-span-expense"></span></h6>
                     </div>
                   </div>
                   
