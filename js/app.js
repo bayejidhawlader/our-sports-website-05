@@ -21,6 +21,18 @@ function disableBtn(playerBtnId) {
 }
 
 
+// Calculate Total Ammount
+document.getElementById('calculate-total').addEventListener('click', function () {
+  const costPerPlayer = parseInt(
+  document.getElementById('player-span-expense').innerText);
+  const managerCosts = getDataFromInputField('manager-costs');
+  const coachCosts = getDataFromInputField('coach-costs');
+
+  const totalCosts = costPerPlayer + managerCosts + coachCosts;
+
+  insertDataIntoTextField('total-span-expense', totalCosts);
+});
+
 // when click button then showing players name to Selected Field
 document.getElementById('player-one').addEventListener('click', function (event) {
   const player = insertSelection(event.target.value);
@@ -96,15 +108,3 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
   // inserts the total cost for players
   insertDataIntoTextField('player-span-expense', costPerPlayer * count);
 });
-
-
-document.getElementById('calculate-total').addEventListener('click', function () {
-    const costPerPlayer = parseInt(
-    document.getElementById('player-span-expense').innerText);
-    const managerCosts = getDataFromInputField('manager-costs');
-    const coachCosts = getDataFromInputField('coach-costs');
-
-    const totalCosts = costPerPlayer + managerCosts + coachCosts;
-
-    insertDataIntoTextField('total-span-expense', totalCosts);
-  });
